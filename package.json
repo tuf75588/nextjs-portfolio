@@ -1,36 +1,77 @@
 {
-  "name": "next-starter-tailwind",
+  "name": "andrew-davis.net",
   "version": "2.0.0",
-  "description": "Next.js starter styled with Tailwind CSS",
-  "main": "index.js",
+  "description": "Personal Website for Andrew Davis",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint --ext .jsx,.js,.ts,.tsx,.mdx --fix --ignore-path ./.gitignore ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taylorbryant/next-starter-tailwind.git"
+    "url": "git+ https://github.com/tuf75588/nextjs-portfolio"
   },
-  "author": "Taylor Bryant",
+  "author": "Andrew Davis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/taylorbryant/next-starter-tailwind/issues"
+    "url": "https://github.com/tuf75588/nextjs-portfolio/issues"
   },
-  "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
+  "homepage": "https://github.com/tuf75588/nextjs-portfolio#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "next": "10.0.4",
+    "next-seo": "^4.17.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-ga": "^3.3.0"
   },
   "devDependencies": {
+    "@mapbox/rehype-prism": "^0.5.0",
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^10.0.4",
+    "@types/node": "^14.14.20",
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
     "autoprefixer": "10.1.0",
+    "babel-eslint": "^10.1.0",
     "classnames": "2.2.6",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-mdx": "^1.8.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "file-loader": "^6.2.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
     "postcss": "8.2.1",
     "postcss-100vh-fix": "1.0.2",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-hover-media-feature": "1.0.0",
     "postcss-preset-env": "6.7.0",
-    "tailwindcss": "2.0.2"
+    "prettier": "^2.2.1",
+    "tailwindcss": "2.0.2",
+    "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,md,json}": "prettier --write",
+    "*.{js,jsx,ts,tsx,mdx}": "eslint --fix --ignore-path ./.gitignore"
   }
 }

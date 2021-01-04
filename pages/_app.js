@@ -1,6 +1,7 @@
 import "../css/index.css";
-import Head from "next/head";
+
 import Layout from "@components/layout";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,8 +9,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Next.js Starter Tailwind</title>
         <meta
-          name="Description"
           content="A Next.js starter styled using Tailwind CSS."
+          name="Description"
         />
       </Head>
 

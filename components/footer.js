@@ -3,12 +3,12 @@ export default function Footer() {
     <footer className="bg-blue-600">
       <ul className="flex items-center justify-between lg:container px-4 py-6 mx-auto text-sm text-white md:px-6">
         <li>
-          Created by{" "}
+          Created by{` `}
           <a
-            href="https://taylorbrynat.dev"
-            target="_blank"
-            rel="noopener noreferrer"
             className="font-bold"
+            href="https://taylorbrynat.dev"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             Taylor Bryant
           </a>
@@ -16,10 +16,10 @@ export default function Footer() {
 
         <li>
           <a
-            href="https://github.com/oddstronaut/next-starter-tailwind"
-            target="_blank"
-            rel="noopener noreferrer"
             className="font-bold"
+            href="https://github.com/oddstronaut/next-starter-tailwind"
+            rel="noopener noreferrer"
+            target="_blank"
           >
             GitHub
           </a>

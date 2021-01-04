@@ -26,9 +26,9 @@ export default function AboutPage() {
 
       <Image
         alt="A one-eyed alien holding a broken cable connected between a server and a desktop computer"
+        height={297.17}
         src="/critter.svg"
         width={476}
-        height={297.17}
       />
     </div>
   );
