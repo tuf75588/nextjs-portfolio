@@ -1,8 +1,11 @@
 import "../css/index.css";
 
-import Layout from "@components/layout";
 import Head from "next/head";
 
+import Layout from "../components/layout";
+import names from "../lib/getPostMetaData";
+
+console.log(names);
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
