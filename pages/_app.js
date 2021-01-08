@@ -3,9 +3,8 @@ import "../css/index.css";
 import Head from "next/head";
 
 import Layout from "../components/layout";
-import names from "../lib/getPostMetaData";
+import getPostMetaData from "../lib/getPostMetaData";
 
-console.log(names);
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
