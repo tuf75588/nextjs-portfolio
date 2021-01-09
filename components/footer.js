@@ -18,7 +18,7 @@ export default function Footer() {
           <a
             className="font-bold"
             href="https://github.com/oddstronaut/next-starter-tailwind"
-            rel="noopener noreferrer"
+            rel="dnoopener noreferrer"
             target="_blank"
           >
             GitHub

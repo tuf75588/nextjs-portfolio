@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const META_DESC = `A Web Developer from Philadelphia, PA, specializing in React, Next.js, and Tailwind CSS`;
+const META_TITLE = `Andrew Davis`;
 export default function IndexPage() {
   return (
     <div className="flex flex-col items-center justify-center space-y-12">
