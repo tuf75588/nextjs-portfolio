@@ -2,12 +2,11 @@ import "../css/index.css";
 
 import Head from "next/head";
 
-import Layout from "../components/layout";
 import getPostMetaData from "../lib/getPostMetaData";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <>
       <Head>
         <title>Next.js Starter Tailwind</title>
         <meta
@@ -16,8 +15,9 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
 
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
-    </Layout>
+    </>
   );
 }
 
