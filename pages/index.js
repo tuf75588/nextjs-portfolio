@@ -41,7 +41,30 @@ function IndexPage() {
         })}
       </Head>
       <NextSeo description={META_DESC} title={META_TITLE} />
-      <h1>something new</h1>
+      <div className="flex flex-col justify-center">
+        <section className="max-w-3xl px-3 mx-auto md:px-6">
+          <h1 className="mb-3 text-4xl font-bold">
+            Hi, I&apos;m Andrew, <span aria-hidden="true">👋</span>
+          </h1>
+
+          <p className="mb-12 text-xl leading-relaxed">
+            A Web Developer from the Philadelphia area. . In my spare time, I
+            {` `}
+            <a
+              href="https://soundcloud.com/taylorbryant"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              build and design mechanical keyboards
+            </a>
+            ,{` `}
+            <a href="#projects">build side projects</a>
+            {` `}and{` `}
+            <a href="#writing">write about </a> new technologies and techniques
+            I discover through self learning.
+          </p>
+        </section>
+      </div>
     </>
   );
 }
