@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import { NextSeo } from 'next-seo';
-import React from 'react';
+import Head from "next/head";
+import Link from "next/link";
+import { NextSeo } from "next-seo";
+import React from "react";
 
-import buildSchema from '../lib/buildSchema';
-import getPostMetaData from '../lib/getPostMetaData';
+import buildSchema from "../lib/buildSchema";
+import getPostMetaData from "../lib/getPostMetaData";
 
 const META_DESC = `A Web Developer from Philadelphia, PA, specializing in React, Next.js, and Tailwind CSS`;
 const META_TITLE = `Andrew Davis`;
@@ -32,8 +32,8 @@ function IndexPage() {
       <Head>
         {/*  meta information for each page for SEO purposes */}
         {buildSchema({
-          '@context': `http://schema.org`,
-          '@type': `Person`,
+          "@context": `http://schema.org`,
+          "@type": `Person`,
           name: `Andrew Davis`,
           url: `https://andrewdavis.dev`,
           gender: `male`,
@@ -65,10 +65,11 @@ function IndexPage() {
           </p>
         </section>
       </div>
+
       <section className="flex flex-col max-w-3xl px-3 mx-auto md:px-6 md:justify-between md:flex-row">
         <div className="md:w-1/3">
           <h2 className="mb-6 text-3xl font-bold md:mb-0" id="projects">
-            Side Projects
+            Side projects
           </h2>
         </div>
       </section>
@@ -88,6 +89,7 @@ function IndexPage() {
                     <a>{meta.title}</a>
                   </Link>
                 </h3>
+                <p className="leading-relaxed">{meta.description}</p>
               </article>
             ))}
         </div>
