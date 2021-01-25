@@ -78,6 +78,19 @@ function IndexPage() {
             Writing
           </h2>
         </div>
+        <div className="space-y-6 md:w-2/3">
+          {getPostMetaData()
+            .filter(({ meta }) => meta.publish)
+            .map(({ meta, link }) => (
+              <article key={meta.title}>
+                <h3 className="mb-3 text-xl">
+                  <Link href={link}>
+                    <a>{meta.title}</a>
+                  </Link>
+                </h3>
+              </article>
+            ))}
+        </div>
       </section>
     </>
   );
