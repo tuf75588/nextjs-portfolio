@@ -1,3 +1,10 @@
+import {
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
@@ -63,6 +70,39 @@ function IndexPage() {
             <a href="#writing">write about </a> new technologies and techniques
             I discover through self learning.
           </p>
+          <ul className="flex space-x-8">
+            {[
+              {
+                url: `https://github.com/tuf75588`,
+                icon: faGithub,
+                title: `Github`,
+              },
+              {
+                url: `https://twitter.com/booleanvalue1`,
+                icon: faTwitter,
+                title: `Twitter`,
+              },
+              {
+                url: `https://www.linkedin.com/in/andrew-t-davis/`,
+                icon: faLinkedin,
+                title: `LinkedIn`,
+              },
+              {
+                url: `https://instagram.com/flyersfan1`,
+                icon: faInstagram,
+                title: `Instagram`,
+              },
+            ].map((item) => (
+              <li key={item.title}>
+                <a
+                  className="text-3xl no-underline block text-black"
+                  href={item.url}
+                >
+                  <FontAwesomeIcon icon={item.icon} title={item.title} />
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
       </div>
 
