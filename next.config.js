@@ -9,6 +9,7 @@ const withMDX = require(`@next/mdx`)({
 
 module.exports = withMDX({
   pageExtensions: [`js`, `mdx`],
+  target: `serverless`,
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(png|jpg?g|gif)$/i,
