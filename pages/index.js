@@ -56,16 +56,17 @@ function IndexPage() {
 
           <p className="mb-12 text-xl leading-relaxed">
             A Web Developer from the Philadelphia area. . In my spare time, I
+            build, and design
             {` `}
             <a
               href="https://soundcloud.com/taylorbryant"
               rel="noopener noreferrer"
               target="_blank"
             >
-              build and design mechanical keyboards
+              mechanical keyboards
             </a>
             ,{` `}
-            <a href="#projects">build side projects</a>
+            build<a href="#projects"> side projects</a>
             {` `}and{` `}
             <a href="#writing">write about </a> new technologies and techniques
             I discover through self learning.
