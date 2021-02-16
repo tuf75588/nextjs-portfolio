@@ -22,13 +22,13 @@ const PROJECTS = [
   {
     name: `progressive-trello-client`,
     description: `a rewrite of the popular collaboration software, Trello.`,
-    src: `netlify-slug-here`,
+    url: `https://trello-lite.netlify.app`,
     tags: [{ name: `TypeScript` }, { name: `React.js` }],
   },
   {
     name: `emoji-search-tool`,
     description: `a tool to search for your favorite emojis by keyword`,
-    src: `netlify-slug-here`,
+    url: `https://tuf75588.github.io/emojis-search/`,
     tags: [{ name: `React.js` }, { name: `CSS` }],
   },
 ];
