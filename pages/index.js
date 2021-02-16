@@ -113,6 +113,18 @@ function IndexPage() {
             Side projects
           </h2>
         </div>
+        <div className="space-y-6 md:w-2/3">
+          {PROJECTS.map(({ name, url, description }) => (
+            <article key={name}>
+              <h3 className="mb-3 text-xl">
+                <a href={url} rel="noreferrer" target="_blank">
+                  {name}
+                </a>
+              </h3>
+              <p className="leading-relaxed">{description}</p>
+            </article>
+          ))}
+        </div>
       </section>
       <section className="flex flex-col max-w-3xl px-3 mx-auto md:px-6 md:justify-between md:flex-row">
         <div className="md:w-1/3">
