@@ -58,11 +58,8 @@ function IndexPage() {
             A Web Developer from the Philadelphia area. . In my spare time, I
             build, and design
             {` `}
-            <a
-              href="https://soundcloud.com/taylorbryant"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            {/* eslint-disable-next-line */}
+            <a href="#" rel="noopener noreferrer" target="_blank">
               mechanical keyboards
             </a>
             ,{` `}
