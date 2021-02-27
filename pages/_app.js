@@ -14,7 +14,48 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <>
-        <Head />
+        <Head>
+          <link
+            href="/apple-touch-icon.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+          />
+          <link
+            href="/favicon-32x32.png"
+            rel="icon"
+            sizes="32x32"
+            type="img/png"
+          />
+          <link
+            href="/favicon-16x16.png"
+            rel="icon"
+            sizes="16x16"
+            type="image/png"
+          />
+          <link href="/site.webmanifest" rel="manifest" />
+          <link color="5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" />
+          <link href="/favicon.ico" rel="shortcut icon" />
+          <meta content="#00aba9" name="msapplication-TileColor" />
+          <meta content="/browserconfig.xml" name="msapplication-config" />
+          <meta content="#ffffff" name="theme-color" />
+        </Head>
+        <DefaultSeo
+          openGraph={{
+            images: [
+              {
+                url: `https://andrewdavis.dev/android-chrome-256x256.png`,
+                width: 256,
+                height: 256,
+                alt: `Andrew Davis' favorite favicon`,
+              },
+            ],
+          }}
+          twitter={{
+            handle: `@booleanvalue1`,
+            site: `@booleanvalue1`,
+            cardType: `summary_large_image`,
+          }}
+        />
         <div className="flex flex-col min-h-screen space-y-12 text-lg md:space-y-24">
           <header className="flex items-center w-full max-w-3xl px-3 pt-3 mx-auto md:pt-6 md:px-6">
             <Link href="/">
