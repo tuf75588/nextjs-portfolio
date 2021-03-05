@@ -58,6 +58,14 @@ class MyApp extends App {
         />
         <div className="flex flex-col min-h-screen space-y-12 text-lg md:space-y-24">
           <header className="flex items-center w-full max-w-3xl px-3 pt-3 mx-auto md:pt-6 md:px-6">
+            <Image
+              alt="A picture of Andrew"
+              className="rounded-full"
+              height={40}
+              priority
+              src="/fox.png"
+              width={40}
+            />
             <Link href="/">
               <a className="ml-3 text-2xl no-underline text-black">
                 Andrew Davis

@@ -66,7 +66,8 @@ function IndexPage() {
             build<a href="#projects"> side projects</a>
             {` `}and{` `}
             <a href="#writing">write about </a> new technologies and techniques
-            I discover through self learning.
+            I discover through self learning. My resume can be viewed{` `}
+            <Link href="/career">here</Link>.
           </p>
           <ul className="flex space-x-8">
             {[
