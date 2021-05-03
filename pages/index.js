@@ -3,15 +3,15 @@ import {
   faInstagram,
   faLinkedin,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Head from "next/head";
-import Link from "next/link";
-import { NextSeo } from "next-seo";
-import React from "react";
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Head from 'next/head';
+import Link from 'next/link';
+import { NextSeo } from 'next-seo';
+import React from 'react';
 
-import buildSchema from "../lib/buildSchema";
-import getPostMetaData from "../lib/getPostMetaData";
+import buildSchema from '../lib/buildSchema';
+import getPostMetaData from '../lib/getPostMetaData';
 
 const META_DESC = `A Web Developer from Philadelphia, PA, specializing in React, Next.js, and Tailwind CSS`;
 const META_TITLE = `Andrew Davis`;
@@ -39,8 +39,8 @@ function IndexPage() {
       <Head>
         {/*  meta information for each page for SEO purposes */}
         {buildSchema({
-          "@context": `http://schema.org`,
-          "@type": `Person`,
+          '@context': `http://schema.org`,
+          '@type': `Person`,
           name: `Andrew Davis`,
           url: `https://andrewdavis.dev`,
           gender: `male`,
@@ -59,7 +59,11 @@ function IndexPage() {
             build, and design
             {` `}
             {/* eslint-disable-next-line */}
-            <a href="#" rel="noopener noreferrer" target="_blank">
+            <a
+              href="https://imgur.com/a/JX6dduc#8wsMfLs"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               mechanical keyboards
             </a>
             ,{` `}

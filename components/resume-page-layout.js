@@ -28,7 +28,9 @@ function ResumePageLayout({ meta, children }) {
           type: `article`,
           url: metaUrl,
         }}
+        title={`Andrew Davis - ${meta.title}`}
       />
+      <article>{children}</article>
     </>
   );
 }
