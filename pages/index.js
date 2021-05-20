@@ -20,7 +20,7 @@ const META_TITLE = `Andrew Davis`;
 
 const PROJECTS = [
   {
-    name: `progressive-trello-client`,
+    name: `progressive-Trello-client`,
     description: `a rewrite of the popular collaboration software, Trello.`,
     url: `https://trello-lite.netlify.app`,
     tags: [{ name: `TypeScript` }, { name: `React.js` }],
@@ -29,6 +29,24 @@ const PROJECTS = [
     name: `emoji-search-tool`,
     description: `a tool to search for your favorite emojis by keyword`,
     url: `https://tuf75588.github.io/emojis-search/`,
+    tags: [{ name: `React.js` }, { name: `CSS` }],
+  },
+  {
+    name: `Github Profile - cloned in React`,
+    description: `My own version of the GitHub profile user interface using React.js and GraphQL`,
+    url: `https://react-github1.netlify.app/`,
+    tags: [{ name: `React.js` }, { name: `GraphQL` }, { name: `CSS` }],
+  },
+  {
+    name: `Netflix-lite`,
+    description: `My own interpretation of the Netflix video player interface, using pure HTML, CSS and JavaScript`,
+    url: `https://netflix-video-player-atd285.vercel.app/`,
+    tags: [{ name: `CSS` }, { name: `JavaScript` }],
+  },
+  {
+    name: `Hot Ones Hot Sauce Tracker`,
+    description: `An application tracking the hot sauces used over various seasons of the popular YouTube series, "Hot Ones", from the channel First We Feast`,
+    url: `https://elegant-jang-48e480.netlify.app/`,
     tags: [{ name: `React.js` }, { name: `CSS` }],
   },
 ];
