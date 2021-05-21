@@ -1,13 +1,15 @@
-import "../css/index.css";
+import '../css/index.css';
 
-import App from "next/app";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Router from "next/router";
-import { DefaultSeo } from "next-seo";
-import React from "react";
-import ReactGA from "react-ga";
+import App from 'next/app';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import Router from 'next/router';
+import { DefaultSeo } from 'next-seo';
+import React from 'react';
+import ReactGA from 'react-ga';
+
+import BLMHeader from '../components/BLM';
 
 class MyApp extends App {
   render() {
@@ -73,6 +75,9 @@ class MyApp extends App {
             </Link>
           </header>
           <main className="flex-1 space-y-12 md:space-y-24">
+            <div style={{ width: `50%`, margin: `0 auto` }}>
+              <BLMHeader />
+            </div>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             <Component {...pageProps} />
           </main>

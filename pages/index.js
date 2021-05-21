@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import React from 'react';
 
+import BLMHeader from '../components/BLM';
 import buildSchema from '../lib/buildSchema';
 import getPostMetaData from '../lib/getPostMetaData';
 
