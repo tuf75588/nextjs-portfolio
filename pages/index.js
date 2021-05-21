@@ -20,26 +20,26 @@ const META_TITLE = `Andrew Davis`;
 
 const PROJECTS = [
   {
-    name: `progressive-Trello-client`,
-    description: `a rewrite of the popular collaboration software, Trello.`,
+    name: `progressive Trello client`,
+    description: `a rewrite of the popular list making client, Trello.`,
     url: `https://trello-lite.netlify.app`,
     tags: [{ name: `TypeScript` }, { name: `React.js` }],
   },
   {
     name: `emoji-search-tool`,
-    description: `a tool to search for your favorite emojis by keyword`,
+    description: `a tool to search for your favorite emojis by keyword!`,
     url: `https://tuf75588.github.io/emojis-search/`,
     tags: [{ name: `React.js` }, { name: `CSS` }],
   },
   {
-    name: `Github Profile - cloned in React`,
-    description: `My own version of the GitHub profile user interface using React.js and GraphQL`,
+    name: `Github Profile - Cloned in React`,
+    description: `My own version of GitHub's user profile interface using React.js and GraphQL`,
     url: `https://react-github1.netlify.app/`,
     tags: [{ name: `React.js` }, { name: `GraphQL` }, { name: `CSS` }],
   },
   {
-    name: `Netflix-lite`,
-    description: `My own interpretation of the Netflix video player interface, using pure HTML, CSS and JavaScript`,
+    name: `Netflix lite`,
+    description: `A recreation of the Netflix video player, using pure HTML, CSS and JavaScript`,
     url: `https://netflix-video-player-atd285.vercel.app/`,
     tags: [{ name: `CSS` }, { name: `JavaScript` }],
   },
