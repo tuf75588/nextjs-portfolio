@@ -75,7 +75,7 @@ class MyApp extends App {
             </Link>
           </header>
           <main className="flex-1 space-y-12 md:space-y-24">
-            <div style={{ width: `50%`, margin: `0 auto` }}>
+            <div style={{ width: `500px`, margin: `0 auto` }}>
               <BLMHeader />
             </div>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
