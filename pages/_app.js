@@ -59,7 +59,8 @@ class MyApp extends App {
           }}
         />
         <div className="flex flex-col min-h-screen space-y-12 text-lg md:space-y-24">
-          <header className="flex items-center w-full max-w-3xl px-3 pt-3 mx-auto md:pt-6 md:px-6">
+          <BLMHeader />
+          <header className="flex items-center w-full max-w-3xl px-3 pt-3 mx-auto md:pt-6 md:px-6 app-header">
             <Image
               alt="A picture of Andrew"
               className="rounded-full"
@@ -75,9 +76,6 @@ class MyApp extends App {
             </Link>
           </header>
           <main className="flex-1 space-y-12 md:space-y-24">
-            <div style={{ width: `500px`, margin: `0 auto` }}>
-              <BLMHeader />
-            </div>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
             <Component {...pageProps} />
           </main>

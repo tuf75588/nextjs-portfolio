@@ -1,8 +1,8 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import { NextSeo } from "next-seo";
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { NextSeo } from 'next-seo';
 
-import buildSchema from "../lib/buildSchema";
+import buildSchema from '../lib/buildSchema';
 
 function ResumePageLayout({ meta, children }) {
   const { description } = meta;
@@ -12,8 +12,8 @@ function ResumePageLayout({ meta, children }) {
     <>
       <Head>
         {buildSchema({
-          "@context": `http://schema.org`,
-          "@type": `Person`,
+          '@context': `http://schema.org`,
+          '@type': `Person`,
           name: `Andrew Davis`,
           gender: `male`,
           email: `develop.it4@gmail.com`,
@@ -30,7 +30,9 @@ function ResumePageLayout({ meta, children }) {
         }}
         title={`Andrew Davis - ${meta.title}`}
       />
-      <article>{children}</article>
+      <article className="flex-col max-w-3xl px-3 mx-auto md:px-6">
+        {children}
+      </article>
     </>
   );
 }

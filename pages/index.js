@@ -70,7 +70,7 @@ function IndexPage() {
       <div className="flex flex-col justify-center">
         <section className="max-w-3xl px-3 mx-auto md:px-6">
           <h1 className="mb-3 text-4xl font-bold">
-            Hi, I&apos;m Andrew, <span aria-hidden="true">👋</span>
+            Hi, I&apos;m Andrew. <span aria-hidden="true">👋</span>
           </h1>
 
           <p className="mb-12 text-xl leading-relaxed">

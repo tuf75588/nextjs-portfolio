@@ -3,18 +3,21 @@ import React from 'react';
 function BLMHeader() {
   return (
     <div
+      className="blm-parent"
       style={{
         background: `#000`,
-        padding: `4em`,
-        marginBottom: `1em`,
+        fontSize: `1.2em`,
         color: `#fff`,
-        margin: `0.5em`,
+        display: `flex`,
+        flexDirection: `column`,
+        alignItems: `center`,
+        justifyContent: `center`,
+        marginBottom: `-2em`,
+        padding: `0.5em`,
       }}
     >
-      <h1 style={{ fontSize: `2rem`, marginBottom: `1em` }}>
-        #BlackLivesMatter
-      </h1>
-      <p style={{ fontSize: `1.25rem` }}>
+      <h1 style={{ fontWeight: 600 }}>#BlackLivesMatter</h1>
+      <p>
         I stand in solidarity with the Black community against racism and
         injustice.
       </p>
