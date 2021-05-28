@@ -120,7 +120,11 @@ function IndexPage() {
                   className="text-3xl no-underline block text-black"
                   href={item.url}
                 >
-                  <FontAwesomeIcon icon={item.icon} title={item.title} />
+                  <FontAwesomeIcon
+                    className="w-8 h-8"
+                    icon={item.icon}
+                    title={item.title}
+                  />
                 </a>
               </li>
             ))}
