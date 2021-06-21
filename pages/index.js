@@ -10,7 +10,6 @@ import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import React from 'react';
 
-import BLMHeader from '../components/BLM';
 import buildSchema from '../lib/buildSchema';
 import getPostMetaData from '../lib/getPostMetaData';
 
@@ -99,7 +98,14 @@ function IndexPage() {
             </a>
             {` `}
             My resume can be viewed{` `}
-            <Link href="/career">here</Link>.
+            <a
+              href="https://www.dropbox.com/s/u7pf5abrh3pm5w1/Andrew_resume.pdf?dl=0"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              here
+            </a>
+            .
           </p>
           <ul className="flex space-x-8">
             {[
